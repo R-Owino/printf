@@ -19,12 +19,17 @@ Simple project to recreate the printf function in C.
 - No more than 5 functions per file
 
 ### Header file
-The prototypes of all functions are included in header file `main.h`, which has been include guarded.
+The prototypes of all functions are included in header file main.h, which has been include guarded.
 
 ### Compilation
 The codes are compiled this way:
-```gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c
 ```
-### Testing 
-- The c file with the main function is in the directory test
-- While testing, compile the `_printf` with the extra gcc flag `-Wno-format`: `gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c` 
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c
+```
+
+### Testing
+The c file with the main function is in the directory `test`
+While testing, compile the `_printf` with the extra gcc flag `-Wno-format`: 
+```
+gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c
+```
