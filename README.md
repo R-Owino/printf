@@ -23,7 +23,8 @@ The prototypes of all functions are included in header file `main.h`, which has 
 
 ### Compilation
 The codes are compiled this way:
-```gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c
+```
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c
 ```
 ### Testing 
 - The c file with the main function is in the directory test
