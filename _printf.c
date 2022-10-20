@@ -28,7 +28,8 @@ int (*conversion(const char c))(va_list)
 
 	while (i < 14)
 	{
-		if (c == fp[i].c[0]) return (fp[i].f);
+		if (c == fp[i].c[0])
+			return (fp[i].f);
 		i++;
 	}
 	return (NULL);
@@ -44,7 +45,7 @@ int _printf(const char *format, ...)
 	va_list ap;
 	int sum = 0, i = 0;
 	int (*func)();
-	
+
 	if (!format || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 	va_start(ap, format);
@@ -74,7 +75,7 @@ int _printf(const char *format, ...)
 			sum++;
 			i++;
 		}
-        }
+	}
 	va_end(ap);
 	return (sum);
 }
